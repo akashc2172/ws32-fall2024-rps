@@ -2,4 +2,6 @@ import rpsSupport
 
 if __name__ == "__main__":
     while True:
-        pass # TODO: Write main game loop here
+        winTable = rpsSupport.standardWins
+        result, computerThrow = rpsSupport.game.playARound(winTable)
+        print("Computer chose %s. You %s!" % (computerThrow, result))
